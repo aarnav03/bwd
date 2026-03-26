@@ -13,6 +13,14 @@
 	--accent: #c2c2c2;
 }
 
+a,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: var(--text-primary);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -44,8 +52,8 @@ body {
 
 /* VINYL */
 .vinyl {
-	width: 65vw;
-	height: 65vw;
+	width: 55vw;
+	height: 55vw;
 	/* max-width: 500px; */
 	/* max-height: 500px; */
 
@@ -53,7 +61,7 @@ body {
 	border-radius: 50%;
 
 	position: absolute;
-	left: -35vw;
+	left: -32vw;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -161,9 +169,6 @@ body {
 }
 
 .next-btn {
-	position: absolute;
-	bottom: 4vh;
-	right: 4vw;
 
 	padding: 10px 18px;
 	font-size: 0.7rem;
@@ -188,4 +193,41 @@ body {
 
 .vinyl.spin {
 	transform: translateY(-50%) rotate(180deg);
+}
+
+.nav-btn {
+	padding: 10px 18px;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	border: 1px solid var(--text-primary);
+	background: transparent;
+	color: var(--text-primary);
+	text-decoration: none;
+
+	transition: all 0.2s ease;
+}
+
+/* HOVER → FILLED */
+.nav-btn:hover {
+	background: var(--text-primary);
+	color: var(--bg-main);
+}
+
+.nav-btnp {
+	padding: 10px 18px;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	border: 1px solid var(--text-primary);
+
+	background: transparent;
+	color: var(--text-primary);
+	text-decoration: none;
+
+	transition: all 0.2s ease;
+}
+
+/* HOVER → FILLED */
+.nav-btnp:hover {
+	background: var(--text-primary);
+	color: var(--bg-main);
 }
