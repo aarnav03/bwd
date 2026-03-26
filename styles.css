@@ -64,6 +64,18 @@ body {
 	left: -32vw;
 	top: 50%;
 	transform: translateY(-50%);
+
+	animation: spin 120s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: translateY(-50%) rotate(0deg);
+	}
+
+	to {
+		transform: translateY(-50%) rotate(360deg);
+	}
 }
 
 /* GROOVES */
