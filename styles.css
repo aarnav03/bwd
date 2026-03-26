@@ -159,3 +159,33 @@ body {
 	text-decoration: none;
 	color: var(--text-primary);
 }
+
+.next-btn {
+	position: absolute;
+	bottom: 4vh;
+	right: 4vw;
+
+	padding: 10px 18px;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+
+	border: 1px solid var(--text-primary);
+	background: transparent;
+	color: var(--text-primary);
+
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.next-btn:hover {
+	background: var(--text-primary);
+	color: var(--bg-main);
+}
+
+.vinyl {
+	transition: transform 0.5s ease;
+}
+
+.vinyl.spin {
+	transform: translateY(-50%) rotate(180deg);
+}

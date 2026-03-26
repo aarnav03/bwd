@@ -75,11 +75,60 @@
 				</div>
 
 				<a href="#" class="view-more">VIEW MORE</a>
+				<button class="next-btn" onclick="nextAlbum()">NEXT →</button>
 			</div>
 		</div>
 
 	</div>
 
+	<script>
+		const albums = [
+			{
+				title: ["TAME", "IMPALA"],
+				track: "BORDERLINE",
+				time: "4:08",
+				img: "cover.jpg"
+			},
+			{
+				title: ["KANYE", "WEST"],
+				track: "FLASHING LIGHTS",
+				time: "3:57",
+				img: "cover2.jpg"
+			},
+			{
+				title: ["CHAAR", "DIWARI"],
+				track: "PARVANA",
+				time: "2:45",
+				img: "cover3.jpg"
+			}
+		];
+
+		let current = 0;
+
+		function nextAlbum() {
+			current = (current + 1) % albums.length;
+			const album = albums[current];
+
+			document.querySelector(".title").innerHTML =
+				album.title.join("<br>");
+
+			document.querySelector(".track-name").textContent =
+				"01. " + album.track;
+
+			document.querySelector(".time").textContent =
+				"0:00 / " + album.time;
+
+			document.querySelector(".label img").src =
+				album.img;
+
+			const vinyl = document.querySelector(".vinyl");
+			vinyl.classList.add("spin");
+
+			setTimeout(() => {
+				vinyl.classList.remove("spin");
+			}, 500);
+		}
+	</script>
 </body>
 
 </html>
