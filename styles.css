@@ -44,16 +44,16 @@ body {
 
 /* VINYL */
 .vinyl {
-	width: 40vw;
-	height: 40vw;
-	max-width: 500px;
-	max-height: 500px;
+	width: 65vw;
+	height: 65vw;
+	/* max-width: 500px; */
+	/* max-height: 500px; */
 
 	background: radial-gradient(circle at center, #111 40%, #000 100%);
 	border-radius: 50%;
 
 	position: absolute;
-	left: -20vw;
+	left: -35vw;
 	top: 50%;
 	transform: translateY(-50%);
 }
