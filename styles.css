@@ -257,3 +257,23 @@ body {
 	background: var(--text-primary);
 	color: var(--bg-main);
 }
+
+.nav-btnc {
+	padding: 10px 18px;
+	margin: 2vh;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	border: 1px solid var(--text-primary);
+
+	background: transparent;
+	color: var(--text-primary);
+	text-decoration: none;
+
+	transition: all 0.2s ease;
+}
+
+/* HOVER → FILLED */
+.nav-btnc:hover {
+	background: var(--text-primary);
+	color: var(--bg-main);
+}
